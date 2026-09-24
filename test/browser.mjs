@@ -38,7 +38,7 @@ try{
  await display.waitForFunction(()=>JSON.parse(window.render_game_to_text()).room.board.length===3);await snap(display,'poker-table');await snap(friend,'phone-controller');
  await finish();assert.equal((await read(host)).room.players.reduce((n,p)=>n+p.stack,0),6000);await snap(display,'showdown');
  await host.getByLabel('Table menu').click();await clickCommand(host,'[data-command=mode]');await host.waitForSelector('.table-stage');await snap(host,'phone-only');
- await host.getByLabel('Table menu').click();await clickCommand(host,'[data-command=game]');await host.waitForSelector('#bet-form');await clickCommand(host,'[data-command=start]');
+ await host.getByLabel('Table menu').click();await clickCommand(host,'[data-command=game]');await host.waitForSelector('[data-do=edit-bet]');await clickCommand(host,'[data-command=start]');
  await snap(host,'blackjack-phone');await snap(display,'blackjack-table');await finish();
  await host.getByLabel('Table menu').click();await host.getByRole('button',{name:'My profile'}).click();await snap(host,'achievements');
  await host.locator('summary').click();await host.locator('[name=username]').fill(username);await host.locator('[name=password]').fill('test-password-123');await host.locator('#register-form button').click();await host.waitForFunction(name=>document.querySelector('.modal')?.textContent.includes('@'+name),username);
