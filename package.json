@@ -1,0 +1,27 @@
+{
+  "name": "partydeck",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node server/index.js",
+    "build": "node scripts/build.mjs",
+    "db:generate": "drizzle-kit generate",
+    "dev:sites": "npm run build && wrangler d1 migrations apply partydeck-local --local && wrangler dev --port 4318"
+  },
+  "dependencies": {
+    "@workos-inc/node": "10.13.0",
+    "gsap": "3.14.2",
+    "poker-ts": "1.5.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2",
+    "esbuild": "0.28.2",
+    "wrangler": "4.133.0"
+  }
+}

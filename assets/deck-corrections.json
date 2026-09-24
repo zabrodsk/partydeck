@@ -1,0 +1,27 @@
+[
+  {
+    "id": "2H",
+    "prompt": "Use case: precise-object-edit. Edit target: attached 2H playing card. Change ONLY the tiny heart suit icon in the BOTTOM RIGHT corner, above the inverted rank. Rotate that tiny heart exactly 180 degrees: its pointed tip must point UP toward the centre of the card, and its two rounded lobes must face DOWN toward the bottom edge. Do not add a stem; it must be an upside-down HEART, not a spade. Preserve everything else exactly: central illustration, all ranks including inverted bottom rank, top-left heart, proportions, white background, black ink, margins. Output only the complete flat card image with the same portrait aspect ratio.",
+    "source": "local-generation/exec-ff38a57c-fc65-452a-8a1a-5289abc9343f.png"
+  },
+  {
+    "id": "4H",
+    "prompt": "Use case: precise-object-edit. Edit target: attached 4H playing card. Change ONLY the tiny heart suit icon in the BOTTOM RIGHT corner, above the inverted rank. Rotate that tiny heart exactly 180 degrees: its pointed tip must point UP toward the centre of the card, and its two rounded lobes must face DOWN toward the bottom edge. Do not add a stem; it must be an upside-down HEART, not a spade. Preserve everything else exactly: central illustration, all ranks including inverted bottom rank, top-left heart, proportions, white background, black ink, margins. Output only the complete flat card image with the same portrait aspect ratio.",
+    "source": "local-generation/exec-24705c3f-e0fa-4a18-8553-65748a023acb.png"
+  },
+  {
+    "id": "6H",
+    "prompt": "Use case: precise-object-edit. Edit target: attached 6H playing card. Change ONLY the tiny heart suit icon in the BOTTOM RIGHT corner, above the inverted rank. Rotate that tiny heart exactly 180 degrees: its pointed tip must point UP toward the centre of the card, and its two rounded lobes must face DOWN toward the bottom edge. Do not add a stem; it must be an upside-down HEART, not a spade. Preserve everything else exactly: central illustration, all ranks including inverted bottom rank, top-left heart, proportions, white background, black ink, margins. Output only the complete flat card image with the same portrait aspect ratio.",
+    "source": "local-generation/exec-0a50675c-c89f-4665-910d-edf36f9a029a.png"
+  },
+  {
+    "id": "7H",
+    "prompt": "Use case: precise-object-edit. Edit target: attached 7H playing card. Change ONLY the tiny heart suit icon in the BOTTOM RIGHT corner, above the inverted rank. Rotate that tiny heart exactly 180 degrees: its pointed tip must point UP toward the centre of the card, and its two rounded lobes must face DOWN toward the bottom edge. Do not add a stem; it must be an upside-down HEART, not a spade. Preserve everything else exactly: central illustration, all ranks including inverted bottom rank, top-left heart, proportions, white background, black ink, margins. Output only the complete flat card image with the same portrait aspect ratio.",
+    "source": "local-generation/exec-14281a52-3a82-4d29-bccf-61b6ecfe05c4.png"
+  },
+  {
+    "id": "KH",
+    "prompt": "Use case: precise-object-edit. Edit target: attached KH playing card. Change ONLY the tiny heart suit icon in the BOTTOM RIGHT corner, above the inverted rank. Rotate that tiny heart exactly 180 degrees: its pointed tip must point UP toward the centre of the card, and its two rounded lobes must face DOWN toward the bottom edge. Do not add a stem; it must be an upside-down HEART, not a spade. Preserve everything else exactly: central illustration, all ranks including inverted bottom rank, top-left heart, proportions, white background, black ink, margins. Output only the complete flat card image with the same portrait aspect ratio.",
+    "source": "local-generation/exec-a269ee92-0bbe-4068-aa52-9a45d3e2202d.png"
+  }
+]

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+data/
+.env
+output/
+*.log
+.DS_Store
+
+.wrangler/
+.sites-runtime/
+.env.*
+.dev.vars*

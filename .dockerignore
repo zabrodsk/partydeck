@@ -1,0 +1,10 @@
+node_modules
+data
+output
+.git
+.env*
+docs
+assets
+.wrangler
+.sites-runtime
+dist

@@ -1,0 +1,7 @@
+{
+  "tool": "Built-in imagegen",
+  "prompt": "Create a polished landscape GitHub README cover for Partydeck, a minimal social poker and blackjack web app. Use case: ads-marketing. Reference image is material/style guidance for matte black playing cards, ivory faces and black/silver chips, not a layout to copy. Wide editorial composition about 2.5:1. Warm ivory background #f5f5f2, generous negative space, meticulous Swiss typography. On the left, exact large lowercase black wordmark text 'partydeck', below exact smaller text 'Deal everyone in.' On the right, a sculptural arrangement of three premium playing cards and a small stack of black/silver poker chips: one black card back, one clearly recognizable geometric black King of spades, one ivory Ace of spades. Beautiful subtle soft shadows, restrained studio product photography, modern black and ivory palette. Keep all text and objects well inside the crop. No gradients, neon, badges, device mockups, additional copy, frames, or decorative UI boxes. High-end, quiet and crisp.",
+  "output": "docs/readme/cover-original.png",
+  "optimized": "docs/readme/cover.webp",
+  "reference": "assets/landing/table-objects-cutout.png"
+}

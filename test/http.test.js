@@ -1,0 +1,26 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createApp } from '../server/index.js';
+test('HTTP sessions isolate players, anonymous display streams work, and cross-site writes fail',async t=>{
+ const app=await createApp({dbFile:':memory:',publicUrl:'https://table.example'});await new Promise(r=>app.server.listen(0,'127.0.0.1',r));t.after(()=>app.close());
+ const base=`http://127.0.0.1:${app.server.address().port}`;
+ const post=(path,data,cookie,origin)=>fetch(base+path,{method:'POST',headers:{'Content-Type':'application/json',...(cookie?{cookie}:{}),...(origin?{origin}: {})},body:JSON.stringify(data)});
+ assert.equal((await post('/api/rooms',{})).status,401);
+ const displayCreated=await post('/api/rooms',{mode:'shared',displayOnly:true});assert.equal(displayCreated.status,200);
+ const displayBody=await displayCreated.json();assert.equal(displayBody.view,'display');
+ assert.equal(app.manager.get(displayBody.code).players.length,0);assert.equal(app.manager.get(displayBody.code).hostId,null);
+ const guest=await post('/api/guest',{name:'Host'}),cookie=guest.headers.get('set-cookie').split(';')[0];assert.match(guest.headers.get('set-cookie'),/HttpOnly/);
+ const created=await post('/api/rooms',{mode:'phones'},cookie);const {code}=await created.json();
+ const guest2=await post('/api/guest',{name:'Friend'}),cookie2=guest2.headers.get('set-cookie').split(';')[0];await post(`/api/rooms/${code}/join`,{},cookie2);
+ assert.equal((await post('/api/rooms',{},cookie,'https://evil.example')).status,403);
+ const abort=new AbortController();const stream=await fetch(base+`/api/rooms/${code}/stream?view=display`,{signal:abort.signal});assert.equal(stream.status,200);
+ const reader=stream.body.getReader();let buffer='';while(!buffer.includes('data:'))buffer+=new TextDecoder().decode((await reader.read()).value);
+ const payload=JSON.parse(buffer.split('data: ')[1].split('\n')[0]);assert.equal(payload.room.me,null);assert.equal(payload.profile,null);assert.equal(payload.room.players.length,2);
+ abort.abort();await reader.cancel().catch(()=>{});
+ const qr=await fetch(base+`/api/rooms/${code}/qr`);assert.equal(qr.status,200);assert.match(await qr.text(),/^<svg/);
+ assert.equal((await post('/api/register',{username:null,password:'longpassword'},cookie)).status,400);
+ await post('/api/register',{username:'host_test',password:'longpassword'},cookie);
+ const login=await post('/api/login',{username:'host_test',password:'longpassword'});assert.equal(login.status,200);const loginBody=await login.json();assert.equal('password' in loginBody.profile,false);
+ await post('/api/logout',{},cookie);assert.equal((await (await fetch(base+'/api/me',{headers:{cookie}})).json()).profile,null);
+ assert.equal((await post('/api/logout',{})).status,200);
+});

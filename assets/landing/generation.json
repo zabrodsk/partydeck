@@ -1,0 +1,10 @@
+{
+  "tool": "built-in imagegen",
+  "prompt": "Use case: product-mockup. Create a premium monochrome still-life image for Partydeck, a minimal web poker and blackjack game. Wide landscape 1536x1024. A beautifully manufactured stack of matte jet-black playing cards, two cards slightly fanned showing a crisp tiny ivory spade emblem on their backs, sculptural black and brushed silver poker chips arranged beside the deck, one white ace of spades angled across the black deck. High-end editorial product photography, extremely restrained and modern, meticulous tactile paper edges, satin finishes, soft directional studio light and long natural shadows. Neutral pale stone background #efefeb, seamless floor. Objects occupy the middle-right two thirds, clean negative space at left. Slight overhead three-quarter camera angle, no casino table, no people, no gold, no neon, no gradients, no extra typography, no logos, no watermark. Striking elegant physical objects, polished believable perspective, modest number of chips. Asset will be used in an onboarding side panel and landing-page section, must crop well.",
+  "source": "local-generation/exec-30c7afd0-a7eb-4b24-b836-f52b8b5c9033.png",
+  "original": "table-objects-original.png",
+  "webAssets": [
+    "../../public/art/table-objects-640.webp",
+    "../../public/art/table-objects-960.webp"
+  ]
+}

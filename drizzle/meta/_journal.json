@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789594545551,
+      "tag": "0000_charming_cobalt_man",
+      "breakpoints": true
+    }
+  ]
+}

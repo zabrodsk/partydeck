@@ -1,0 +1,13 @@
+import { build } from 'esbuild';
+import { mkdir,rm,cp,copyFile,readFile,writeFile } from 'node:fs/promises';
+await rm('dist',{recursive:true,force:true});
+await mkdir('dist/server',{recursive:true});
+await build({entryPoints:['worker/index.js'],bundle:true,format:'esm',platform:'node',target:'es2022',outfile:'dist/server/index.js',loader:{'.html':'text'},external:['node:*','crypto','assert'],banner:{js:"import * as __crypto from 'node:crypto'; import __assert from 'node:assert'; const require = name => { if(name === 'crypto') return __crypto; if(name === 'assert') return __assert; throw new Error('Unknown built-in: '+name); };"}});
+await cp('public','dist/client',{recursive:true});
+await mkdir('dist/client/vendor',{recursive:true});
+await copyFile('node_modules/gsap/dist/gsap.min.js','dist/client/vendor/gsap.min.js');
+await mkdir('dist/.openai',{recursive:true});
+await copyFile('.openai/hosting.json','dist/.openai/hosting.json');
+await cp('drizzle','dist/.openai/drizzle',{recursive:true});
+const bytes=(await readFile('dist/server/index.js')).byteLength;
+console.log(`Sites Worker built: ${bytes} bytes plus static assets.`);

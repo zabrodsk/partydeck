@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image_gen",
+  "useCase": "logo-brand",
+  "status": "concept",
+  "prompts": [
+    "Use case: logo-brand\nAsset type: logo concept for Partydeck, a premium web-based social poker and blackjack app where friends share a table screen and play with their phones.\nPrimary request: One refined, minimal, modern black-and-white logo. A distinctive compact symbol of two overlapping playing cards, with a simple spade integrated through negative space, paired with the wordmark \"partydeck\" in lowercase. The mark should read immediately as playing cards and be recognizable at small app-icon size. Restrained and friendly, with slightly rounded geometry and precise optical spacing.\nScene/backdrop: flat clean white background.\nComposition: one centered horizontal logo lockup, generous whitespace, symbol left and wordmark right, large enough to inspect. A single design, not a brand board.\nStyle: crisp flat vector-like graphic, strong solid black shapes, contemporary carefully kerned sans-serif lettering, no intricate outlines.\nText verbatim: \"partydeck\"\nAvoid: gradients, shadows, 3D, mockups, textures, confetti, party hats, chips, crowns, slogans, extra text, watermarks, multiple variations.",
+    "Use case: background-extraction\nEdit this Partydeck logo presentation only: place the existing black logo and black wordmark on a fully opaque pure WHITE background (#ffffff). No transparency anywhere in this output. The background must visibly be white, with strong black-on-white contrast. Keep the existing two-card symbol, its white spade, the exact lowercase \"partydeck\" wordmark, proportions, typography and layout unchanged. Flat graphic, no shadows or glow."
+  ],
+  "output": "partydeck-logo-concept-v1.png"
+}

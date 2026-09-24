@@ -1,0 +1,428 @@
+{
+  "generator": "Built-in image_gen; one generation per face, with the master King as style reference",
+  "masterPrompt": "Generate the final master KING OF SPADES card face for our complete game deck. The two attached images are STYLE REFERENCES, not things to copy literally. Blend them: use the recognizable human profile, simple crown and white space of reference 2, plus a restrained amount of the architectural negative-space cuts and distinctive geometry of reference 1. The result must feel modern and minimal, with a true king portrait rather than a generic person icon. Double-ended rotationally symmetric crowned male portrait with beard, one simple shoulder, at most two geometric garment details, no ornate pattern or tiny decoration. Medium-sized centre art about 42 percent of the card width, 62 percent height. No sceptre or hands needed.\nSingle flat straight-on poker card, portrait 5:7. Card extends edge to edge to the image bounds, opaque pure white background, no external scene, no rounded corners in raster, no shadow, no texture or paper grain. Pure black artwork only, clean crisp edges.\nExact card is KING of SPADES. Upper-left K in modern medium-weight sans-serif above a clearly accurate spade; lower-right same K/spade rotated 180 degrees. Large readable indices with consistent generous 6 percent inset. No extra text, no other rank, no other suit, no border, no watermark. Keep all art well inside the card. This is a production raster card asset, no mockup.",
+  "cards": [
+    {
+      "id": "KS",
+      "source": "local-generation/exec-f9f962b4-1044-4254-850e-6df4c0ca85e1.png"
+    },
+    {
+      "id": "AS",
+      "path": "local-generation/exec-8e79e0ae-df3d-4152-808b-eb249fe74899.png"
+    },
+    {
+      "id": "4S",
+      "path": "local-generation/exec-f189efa9-e568-4459-82b2-0ff3e8d63e43.png"
+    },
+    {
+      "id": "5S",
+      "path": "local-generation/exec-8c66f1f2-0969-4af4-9354-b110e8a0dd8b.png"
+    },
+    {
+      "id": "2S",
+      "path": "local-generation/exec-e670e9e5-b57f-43fd-97bb-e1c1624b1c2c.png"
+    },
+    {
+      "id": "6S",
+      "path": "local-generation/exec-e988a51c-ebb4-4203-80b2-c5880e4ece60.png"
+    },
+    {
+      "id": "7S",
+      "path": "local-generation/exec-6646025e-e824-471d-8a86-d41430e8f66b.png"
+    },
+    {
+      "id": "3S",
+      "path": "local-generation/exec-0ba1806c-fbb5-4fcb-b035-64319388e3ff.png"
+    },
+    {
+      "id": "8S",
+      "path": "local-generation/exec-0a41f92c-6b62-42e3-a3a7-d413eb6314f8.png"
+    },
+    {
+      "id": "9S",
+      "path": "local-generation/exec-99cb0988-199e-4d56-b6b7-53637b6e8d40.png"
+    },
+    {
+      "id": "TS",
+      "path": "local-generation/exec-67388f21-825f-494c-9843-493ed1feb68f.png"
+    },
+    {
+      "id": "JS",
+      "path": "local-generation/exec-bf7aa399-0ea9-48d3-9cf1-8dc5afcace68.png"
+    },
+    {
+      "id": "QS",
+      "path": "local-generation/exec-0566baf0-587c-408a-9dab-1e4b340449c7.png"
+    },
+    {
+      "id": "3H",
+      "path": "local-generation/exec-4617aa14-a2cd-4e1e-bc37-34bf1e6a6b6f.png"
+    },
+    {
+      "id": "2H",
+      "path": "local-generation/exec-0d90516c-0a4c-495e-bfd2-ba782c252fe9.png"
+    },
+    {
+      "id": "AH",
+      "path": "local-generation/exec-3458ee08-8148-4d4c-92dc-d12c00e6e253.png"
+    },
+    {
+      "id": "5H",
+      "path": "local-generation/exec-ef923ef1-dedc-484f-a7e5-a2c36d8843cd.png"
+    },
+    {
+      "id": "7H",
+      "path": "local-generation/exec-90534fa9-5165-4861-aa03-90aa3458f75a.png"
+    },
+    {
+      "id": "4H",
+      "path": "local-generation/exec-a9024d28-e10d-4a95-980a-0eaaf20bd60b.png"
+    },
+    {
+      "id": "6H",
+      "path": "local-generation/exec-91d0377d-4379-4d7f-a00a-c66656fd53d2.png"
+    },
+    {
+      "id": "9H",
+      "path": "local-generation/exec-a5b6e6b5-4f78-4b6f-911a-684e6e837e71.png"
+    },
+    {
+      "id": "8H",
+      "path": "local-generation/exec-0c88e653-acd5-4471-a124-f2a4c33e04e9.png"
+    },
+    {
+      "id": "JH",
+      "path": "local-generation/exec-4c70f227-cd53-4d04-8d7b-57205a672b82.png"
+    },
+    {
+      "id": "TH",
+      "path": "local-generation/exec-154ce271-d85b-4f02-b4ba-872d8d5eb4e1.png"
+    },
+    {
+      "id": "QH",
+      "path": "local-generation/exec-0cf29e43-4fee-42d0-a131-ecda2f0f9f46.png"
+    },
+    {
+      "id": "KH",
+      "path": "local-generation/exec-8764bffb-937b-47f0-b965-ae5d3275a7bb.png"
+    },
+    {
+      "id": "AD",
+      "path": "local-generation/exec-5089c647-ef2b-497d-beb4-16e57b263375.png"
+    },
+    {
+      "id": "3D",
+      "path": "local-generation/exec-74184501-88ad-4a20-8069-28c77cd8189f.png"
+    },
+    {
+      "id": "2D",
+      "path": "local-generation/exec-019d2e58-1243-4e85-b499-afd7d842d819.png"
+    },
+    {
+      "id": "6D",
+      "path": "local-generation/exec-38b1c817-b930-412a-b305-94201bc848e3.png"
+    },
+    {
+      "id": "4D",
+      "path": "local-generation/exec-7561ad72-03e3-4f05-9223-e46877b858b9.png"
+    },
+    {
+      "id": "5D",
+      "path": "local-generation/exec-e44c3d0b-177a-4c41-a465-d2f17469cf3b.png"
+    },
+    {
+      "id": "7D",
+      "path": "local-generation/exec-7816d095-dd6a-46bb-a28e-33654c0b67ef.png"
+    },
+    {
+      "id": "TD",
+      "path": "local-generation/exec-6cf37d79-28f0-4e4a-a234-488748b2bbc4.png"
+    },
+    {
+      "id": "8D",
+      "path": "local-generation/exec-95f35bca-931c-4677-b185-86e811b9c8ce.png"
+    },
+    {
+      "id": "QD",
+      "path": "local-generation/exec-f25400de-52c5-4457-ae22-f73770c566b7.png"
+    },
+    {
+      "id": "9D",
+      "path": "local-generation/exec-ec52797d-5307-42b3-baa3-ab24f81084fb.png"
+    },
+    {
+      "id": "JD",
+      "path": "local-generation/exec-63632b34-bf54-4c18-9039-dade2ce01275.png"
+    },
+    {
+      "id": "KD",
+      "path": "local-generation/exec-a4b8e723-8cc4-4343-bd8a-ee5d11e4b427.png"
+    },
+    {
+      "id": "AC",
+      "path": "local-generation/exec-1a172520-9c1e-44f1-9f88-4d0b650705e2.png"
+    },
+    {
+      "id": "2C",
+      "path": "local-generation/exec-51c9867b-80be-46f6-9f99-b6f542b07ae0.png"
+    },
+    {
+      "id": "3C",
+      "path": "local-generation/exec-7ebd2c0f-fe8f-4628-800a-6e53c97fcef6.png"
+    },
+    {
+      "id": "5C",
+      "path": "local-generation/exec-79d0fea2-2690-40a8-aa8d-a9ee7bf7a6ef.png"
+    },
+    {
+      "id": "4C",
+      "path": "local-generation/exec-0b58c280-e266-48f4-bdda-f2513c77cbbb.png"
+    },
+    {
+      "id": "6C",
+      "path": "local-generation/exec-cc1dea0d-c46b-4250-81fa-c4f655d73ac6.png"
+    },
+    {
+      "id": "7C",
+      "path": "local-generation/exec-9ae76a1e-9df6-4458-8042-25c93501ddae.png"
+    },
+    {
+      "id": "9C",
+      "path": "local-generation/exec-5201b4d8-aba4-4d29-a0c2-28a2697be0b9.png"
+    },
+    {
+      "id": "8C",
+      "path": "local-generation/exec-914665c7-003f-44f9-808e-4ac7237cf473.png"
+    },
+    {
+      "id": "TC",
+      "path": "local-generation/exec-323489c0-c2a9-4f7f-888d-e0ed51838730.png"
+    },
+    {
+      "id": "JC",
+      "path": "local-generation/exec-92cf9953-57cf-46f2-aba6-954cdaf357b5.png"
+    },
+    {
+      "id": "KC",
+      "path": "local-generation/exec-8b7e6b72-ec5d-4be8-80da-8e7d12f8ca62.png"
+    },
+    {
+      "id": "QC",
+      "path": "local-generation/exec-d312eba5-4c9b-4920-ac5f-945c1ce6399c.png"
+    },
+    {
+      "id": "back",
+      "path": "local-generation/exec-ce6146f3-d56f-469d-9045-c2c64d6db5ae.png"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "AS",
+      "prompt": "Use case: stylized-concept. Generate the A OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one beautiful large spades suit emblem constructed as a clean solid geometric silhouette with one tiny elegant negative-space cut, centred. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'A' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "2S",
+      "prompt": "Use case: stylized-concept. Generate the 2 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '2' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "3S",
+      "prompt": "Use case: stylized-concept. Generate the 3 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '3' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "4S",
+      "prompt": "Use case: stylized-concept. Generate the 4 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '4' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "5S",
+      "prompt": "Use case: stylized-concept. Generate the 5 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '5' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "6S",
+      "prompt": "Use case: stylized-concept. Generate the 6 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '6' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "7S",
+      "prompt": "Use case: stylized-concept. Generate the 7 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '7' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "8S",
+      "prompt": "Use case: stylized-concept. Generate the 8 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '8' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "9S",
+      "prompt": "Use case: stylized-concept. Generate the 9 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '9' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "TS",
+      "prompt": "Use case: stylized-concept. Generate the 10 OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable spades suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '10' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "JS",
+      "prompt": "Use case: stylized-concept. Generate the J OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended JACK, a youthful clean-shaven page in profile with a low geometric cap rather than a royal crown, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'J' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "QS",
+      "prompt": "Use case: stylized-concept. Generate the Q OF SPADES card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned QUEEN in profile, simple curved hair silhouette, restrained geometric garment cuts, no beard. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'Q' and EXACT suit \u2660: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct spades suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "AH",
+      "prompt": "Use case: stylized-concept. Generate the A OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one beautiful large hearts suit emblem constructed as a clean solid geometric silhouette with one tiny elegant negative-space cut, centred. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'A' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "2H",
+      "prompt": "Use case: stylized-concept. Generate the 2 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '2' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "3H",
+      "prompt": "Use case: stylized-concept. Generate the 3 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '3' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "4H",
+      "prompt": "Use case: stylized-concept. Generate the 4 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '4' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "5H",
+      "prompt": "Use case: stylized-concept. Generate the 5 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '5' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "6H",
+      "prompt": "Use case: stylized-concept. Generate the 6 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '6' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "7H",
+      "prompt": "Use case: stylized-concept. Generate the 7 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '7' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "8H",
+      "prompt": "Use case: stylized-concept. Generate the 8 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '8' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "9H",
+      "prompt": "Use case: stylized-concept. Generate the 9 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '9' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "TH",
+      "prompt": "Use case: stylized-concept. Generate the 10 OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable hearts suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '10' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "JH",
+      "prompt": "Use case: stylized-concept. Generate the J OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended JACK, a youthful clean-shaven page in profile with a low geometric cap rather than a royal crown, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'J' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "QH",
+      "prompt": "Use case: stylized-concept. Generate the Q OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned QUEEN in profile, simple curved hair silhouette, restrained geometric garment cuts, no beard. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'Q' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "KH",
+      "prompt": "Use case: stylized-concept. Generate the K OF HEARTS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned KING in profile, simple beard, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'K' and EXACT suit \u2665: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct hearts suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "AD",
+      "prompt": "Use case: stylized-concept. Generate the A OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one beautiful large diamonds suit emblem constructed as a clean solid geometric silhouette with one tiny elegant negative-space cut, centred. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'A' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "2D",
+      "prompt": "Use case: stylized-concept. Generate the 2 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '2' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "3D",
+      "prompt": "Use case: stylized-concept. Generate the 3 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '3' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "4D",
+      "prompt": "Use case: stylized-concept. Generate the 4 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '4' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "5D",
+      "prompt": "Use case: stylized-concept. Generate the 5 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '5' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "6D",
+      "prompt": "Use case: stylized-concept. Generate the 6 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '6' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "7D",
+      "prompt": "Use case: stylized-concept. Generate the 7 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '7' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "8D",
+      "prompt": "Use case: stylized-concept. Generate the 8 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '8' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "9D",
+      "prompt": "Use case: stylized-concept. Generate the 9 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '9' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "TD",
+      "prompt": "Use case: stylized-concept. Generate the 10 OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable diamonds suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '10' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "JD",
+      "prompt": "Use case: stylized-concept. Generate the J OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended JACK, a youthful clean-shaven page in profile with a low geometric cap rather than a royal crown, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'J' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "QD",
+      "prompt": "Use case: stylized-concept. Generate the Q OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned QUEEN in profile, simple curved hair silhouette, restrained geometric garment cuts, no beard. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'Q' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "KD",
+      "prompt": "Use case: stylized-concept. Generate the K OF DIAMONDS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned KING in profile, simple beard, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'K' and EXACT suit \u2666: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct diamonds suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "AC",
+      "prompt": "Use case: stylized-concept. Generate the A OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one beautiful large clubs suit emblem constructed as a clean solid geometric silhouette with one tiny elegant negative-space cut, centred. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'A' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "2C",
+      "prompt": "Use case: stylized-concept. Generate the 2 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '2' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "3C",
+      "prompt": "Use case: stylized-concept. Generate the 3 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '3' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "4C",
+      "prompt": "Use case: stylized-concept. Generate the 4 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '4' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "5C",
+      "prompt": "Use case: stylized-concept. Generate the 5 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '5' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "6C",
+      "prompt": "Use case: stylized-concept. Generate the 6 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '6' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "7C",
+      "prompt": "Use case: stylized-concept. Generate the 7 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '7' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "8C",
+      "prompt": "Use case: stylized-concept. Generate the 8 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '8' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "9C",
+      "prompt": "Use case: stylized-concept. Generate the 9 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '9' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "TC",
+      "prompt": "Use case: stylized-concept. Generate the 10 OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: one large, beautiful, instantly recognizable clubs suit emblem in the centre with one subtle geometric negative-space cut. Use a single central suit emblem, NOT a counted pip arrangement, for a deliberately minimal numbered deck. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text '10' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "JC",
+      "prompt": "Use case: stylized-concept. Generate the J OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended JACK, a youthful clean-shaven page in profile with a low geometric cap rather than a royal crown, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'J' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "QC",
+      "prompt": "Use case: stylized-concept. Generate the Q OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned QUEEN in profile, simple curved hair silhouette, restrained geometric garment cuts, no beard. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'Q' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "KC",
+      "prompt": "Use case: stylized-concept. Generate the K OF CLUBS card of our final 52-card deck. Attached king is the STYLE AND LAYOUT REFERENCE. Match its pure black on opaque white, flat crisp graphic art, generous whitespace, sans-serif indices and 5:7 portrait proportions. Subject: a recognizable double-ended crowned KING in profile, simple beard, restrained geometric garment cuts. Court artwork centred, about 42% card width and 62% height; for numeric/ace cards centre emblem about 30% card width, plenty of blank space. EXACT rank text 'K' and EXACT suit \u2663: upper-left rank above suit, lower-right identical rank/suit rotated 180\u00b0. Rank must appear ONLY in these two corners. Correct clubs suit shapes everywhere. DO NOT accidentally retain the reference K or spades. If numbered/ace do NOT include any human portrait. Black ink only even for hearts/diamonds. Single flat front-facing card edge-to-edge, opaque pure WHITE entire background, never transparent. No border, no perspective, no texture, no shadow, no external scene, no additional cards, no label, no watermark. Keep the corners evenly inset 6%. Production game asset."
+    },
+    {
+      "id": "back",
+      "prompt": "Use case: stylized-concept. Generate the BACK of a premium minimal black-and-white playing card to match this reference deck. Entire portrait5:7 image is the flat card, edge-to-edge pure opaque white canvas, no perspective, no shadow, no texture. Inside generous 8% white margin, a black rectangular panel with softly rounded corners. Within the black panel a restrained repeated geometric interlocking arc pattern in very fine white strokes, balanced 180-degree rotational symmetry, no ranks, letters, suits, logos or meaningful marks. Centre features one small modern white diamond formed by four negative-space triangles, perfect rotational symmetry. Quiet, elegant, simple. A single back image, not a scene. All backs must be identical."
+    }
+  ]
+}

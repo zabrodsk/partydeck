@@ -1,0 +1,13 @@
+{
+  "tool": "Built-in imagegen",
+  "date": "2026-09-17",
+  "source": "assets/landing/table-objects-original.png",
+  "generatedSource": "local-generation/exec-f9c4e3ee-b3fa-4207-8e53-9fdf98474e8f.png",
+  "prompt": "Edit the provided product photograph into a premium website cutout asset. Remove the entire pale background and floor, replacing them with genuine alpha transparency. Preserve the arrangement and realistic physical appearance of the matte black playing-card deck, the white ace of spades leaning against it, and the black poker chip stacks with silver edge accents. No rectangular backdrop, no surface, no gradient background, no checkerboard baked into the pixels. Keep only the cards and chips and a very subtle soft contact shadow with translucent alpha. Center the object group with comfortable transparent padding on all sides; do not clip any objects. Crisp, clean photorealistic edges, restrained black and ivory palette, elegant product lighting. No new text, props, frame or decorations. Landscape composition suitable for a minimal website on an off-white background. Output PNG with real transparent alpha channel.",
+  "output": "assets/landing/table-objects-cutout.png",
+  "webAssets": [
+    "public/art/table-objects-cutout-640.webp",
+    "public/art/table-objects-cutout-960.webp"
+  ],
+  "processing": "WebP resize and compression only; original generated PNG retained. Alpha channel preserved."
+}
