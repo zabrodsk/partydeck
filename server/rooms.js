@@ -49,7 +49,7 @@ export class RoomManager {
     if(r.players.filter(p=>p.seated).length>=8) throw Error('This table is full.');
     const seat=Array.from({length:8},(_,i)=>i).find(i=>!r.players.some(p=>p.seated&&p.seat===i));
     if(!p) {p={id:player.id,name:player.name,stack:2000,bet:20,seat,seated:true,offlineSince:this.now(),lastAction:'',pending:r.phase==='playing'}; r.players.push(p);}
-    else {p.seated=true;p.seat=seat;p.pending=r.phase==='playing';p.offlineSince=this.now();}
+    else {p.seated=true;p.seat=seat;p.pending=r.phase==='playing';p.offlineSince=this.now();p.betReady=false;}
     if(!r.hostId)r.hostId=p.id;
     r.version++;this.persist(r);return p;
   }
@@ -80,11 +80,12 @@ export class RoomManager {
     const p=r.players.find(p=>p.id===id&&p.seated);if(!p)throw Error('You no longer have a seat. Rejoin the room.');
     if(r.phase==='closed')throw Error('This room has ended.');
     if(command==='start') {this.host(r,id);this.start(r);}
+    else if(command==='prepare') {this.host(r,id);this.prepare(r);}
     else if(command==='action') {if(r.phase!=='playing'||r.paused)throw Error('The game is not taking actions right now.');this.action(r,id,args.action,args.amount);}
     else if(command==='pause') {this.host(r,id);if(r.paused&&r.mode==='shared'&&!r.displays.size)throw Error('Reconnect the table display or switch to phone-only mode.');r.paused=!r.paused;r.notice=r.paused?'The host paused the table.':'';}
     else if(command==='mode') {this.host(r,id);if(!['shared','phones'].includes(args.mode))throw Error('Choose a display mode.');r.mode=args.mode;if(r.mode==='phones'){r.notice='';}else if(!r.displays.size&&r.phase==='playing')r.paused=true;}
     else if(command==='game') {this.host(r,id);if(r.phase==='playing')throw Error('Finish the hand before changing games.');if(!['poker','blackjack'].includes(args.game))throw Error('Choose a game.');r.game=args.game;r.phase='lobby';r.engine=null;r.bj=null;r.results=[];r.board=[];r.privateCards={};r.revealed={};}
-    else if(command==='bet') {if(r.game!=='blackjack'||r.phase==='playing')throw Error('Set your bet between hands.');if(!Number.isSafeInteger(args.amount)||args.amount<2||args.amount%2||args.amount>p.stack)throw Error('Choose an even bet within your stack.');p.bet=args.amount;}
+    else if(command==='bet') {if(r.game!=='blackjack'||!['lobby','betting','complete'].includes(r.phase))throw Error('Set your bet between hands.');if(r.paused)throw Error('Resume the table first.');if(!Number.isSafeInteger(args.amount)||args.amount<2||args.amount%2||args.amount>p.stack)throw Error('Choose an even bet within your stack.');p.bet=args.amount;p.betReady=r.phase==='betting';}
     else if(command==='rebuy-request') {if(!r.rebuyRequests.includes(id))r.rebuyRequests.push(id);}
     else if(command==='rebuy') {this.host(r,id);if(r.phase==='playing')throw Error('Rebuys are available between hands.');const target=r.players.find(x=>x.id===args.playerId&&x.seated);if(!target)throw Error('Player not found.');if(target.stack>=2000)throw Error('That player already has a full stack.');target.stack=2000;target.bet=Math.min(target.bet,2000);r.rebuyRequests=r.rebuyRequests.filter(x=>x!==target.id);}
     else if(command==='transfer') {this.host(r,id);const target=r.players.find(x=>x.id===args.playerId&&x.seated&&r.connections.get(x.id)?.size);if(!target)throw Error('Choose a connected player.');r.hostId=target.id;}
@@ -94,12 +95,19 @@ export class RoomManager {
     else throw Error('Unknown table action.');
     r.version++;r.seen.add(key);if(r.seen.size>500)r.seen.delete(r.seen.values().next().value);this.persist(r);
   }
+  prepare(r) {
+    if(r.game!=='blackjack'||!['lobby','complete'].includes(r.phase))throw Error('Finish the hand before choosing new bets.');
+    if(r.paused)throw Error('Resume the table first.');
+    r.phase='betting';r.results=[];r.bj=null;r.lastEvent=null;r.handStart={};r.notice='';
+    for(const p of r.players){p.betReady=false;p.pending=false;p.lastAction='';p.currentBet=0;}
+  }
   start(r) {
     if(r.phase==='playing')throw Error('A hand is already running.');
     if(r.paused)throw Error('Resume the table first.');
     if(r.mode==='shared'&&!r.displays.size)throw Error('Open the shared table display, or choose phone-only mode.');
     const participants=r.players.filter(p=>p.seated&&r.connections.get(p.id)?.size&&p.stack>=(r.game==='poker'?1:2));
     if(participants.length<(r.game==='poker'?2:1))throw Error(r.game==='poker'?'At least two connected players need chips.':'A connected player needs chips.');
+    if(r.phase==='betting'&&participants.some(p=>!p.betReady))throw Error('Wait for everyone to confirm their bet.');
     r.handNumber++;r.lastEvent=null;r.results=[];r.board=[];r.revealed={};r.privateCards={};r.pot=0;r.notice='';r.handStart={};
     for(const p of r.players){p.pending=false;p.lastAction='';}
     for(const p of participants)r.handStart[p.id]=p.stack;
@@ -197,10 +205,10 @@ export class RoomManager {
     }
     const bj=r.bj?.publicView();
     return {code:r.code,name:r.name,hostId:r.hostId,game:r.game,mode:r.mode,phase:r.phase,paused:r.paused,version:r.version,handNumber:r.handNumber,notice:r.notice,displayConnected:r.displays.size>0,graceMs:this.graceMs,serverTime:this.now(),
-      players:r.players.filter(x=>x.seated||x.id===viewerId).map(x=>({id:x.id,name:x.name,seat:x.seat,stack:x.stack,bet:x.currentBet??0,seated:x.seated,pending:x.pending,connected:!!r.connections.get(x.id)?.size,offlineSince:x.offlineSince,lastAction:x.lastAction,hasCards:r.handStart[x.id]!==undefined&&r.phase!=='lobby',cards:publicTable?r.revealed[x.id]??null:undefined})),
+      players:r.players.filter(x=>x.seated||x.id===viewerId).map(x=>({id:x.id,name:x.name,seat:x.seat,stack:x.stack,bet:x.currentBet??0,betReady:!!x.betReady,seated:x.seated,pending:x.pending,connected:!!r.connections.get(x.id)?.size,offlineSince:x.offlineSince,lastAction:x.lastAction,hasCards:r.handStart[x.id]!==undefined&&r.phase!=='lobby',cards:publicTable?r.revealed[x.id]??null:undefined})),
       stage:r.phase==='complete'?'Complete':r.game==='blackjack'?'Blackjack':r.board.length===5?'River':r.board.length===4?'Turn':r.board.length===3?'Flop':'Pre-flop',lastEvent:r.lastEvent??null,
       board:publicTable?r.board:[],pot:publicTable?r.pot:null,activeId,button:r.button,results:r.results,rebuyRequests:p?.id===r.hostId?r.rebuyRequests:[],
       blackjack:publicTable?bj:null,
-      me:p?{handDelta:r.phase==='complete'&&r.handStart[p.id]!==undefined?p.stack-r.handStart[p.id]:null,id:p.id,pending:p.pending,seated:p.seated,stack:p.stack,bet:p.bet,cards:r.game==='poker'?(r.privateCards[p.id]??[]):[],hands:r.game==='blackjack'?bj?.players.find(x=>x.id===p.id)?.hands??[]:[],activeHand:r.bj?.handIndex??0,legal,isHost:p.id===r.hostId}:null};
+      me:p?{handDelta:r.phase==='complete'&&r.handStart[p.id]!==undefined?p.stack-r.handStart[p.id]:null,id:p.id,pending:p.pending,seated:p.seated,stack:p.stack,bet:p.bet,betReady:!!p.betReady,cards:r.game==='poker'?(r.privateCards[p.id]??[]):[],hands:r.game==='blackjack'?bj?.players.find(x=>x.id===p.id)?.hands??[]:[],activeHand:r.bj?.handIndex??0,legal,isHost:p.id===r.hostId}:null};
   }
 }

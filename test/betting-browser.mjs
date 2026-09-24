@@ -83,14 +83,15 @@ for(const [engine,name] of [[chromium,'chromium'],[webkit,'webkit']]){
   assert.equal(all.room.players.find(x=>x.id===all.player).stack,1990);
   await a.locator('.bet-confirm').click();await a.waitForFunction(()=>JSON.parse(window.render_game_to_text()).room.me.stack===0);await a.context().close();
   const bj=fixture('blackjack');bj.room.players[0].stack=1999;
-  const b=await open(browser,bj,320,568);await b.locator('[data-do=edit-bet]').tap();
+  const b=await open(browser,bj,320,568);await b.locator('[data-command=prepare]').tap();await b.locator('.betting-modal').waitFor();
   await b.locator('#bet-amount').fill('51');assert.equal(await b.locator('.bet-confirm').isDisabled(),true);
   await b.locator('[data-bet-amount="100"]').click();await geometry(b,`${name}-blackjack-320`);
   await b.locator('.bet-confirm').click();await b.waitForFunction(()=>JSON.parse(window.render_game_to_text()).room.me.bet===100);
-  assert.equal((await read(b)).room.me.stack,1999);assert.match(await b.locator('.next-bet strong').textContent(),/100/);
+  assert.equal((await read(b)).room.me.stack,1999);assert.match(await b.locator('.wager-choice strong').textContent(),/100/);
   await b.locator('[data-do=edit-bet]').tap();
   // A hand started on another device closes the editor before an obsolete bet can be placed.
-  const request=b.context().request;const version=(await read(b)).room.version;
+  app.manager.command(bj.room,bj.room.players[1].id,'bet',{amount:20},bj.room.version,'confirm-friend-'+name);
+  const request=b.context().request;const version=bj.room.version;
   await request.post(base+'/api/rooms/'+bj.room.code+'/command',{data:{command:'start',args:{},version,requestId:'external-start-'+name}});
   await b.waitForFunction(()=>!document.querySelector('.betting-modal'));assert.equal(await b.locator('.room-shell').evaluate(e=>e.inert),false);
   await b.context().close();console.log(name+': betting, chip accounting, stale requests, focus and responsive checks passed.');

@@ -3,7 +3,7 @@ export function bettingOptions(room, kind) {
   const me = room?.me;
   if (!me?.seated || me.pending || room.paused) return null;
   if (kind === 'blackjack') {
-    if (room.game !== 'blackjack' || !['lobby', 'complete'].includes(room.phase)) return null;
+    if (room.game !== 'blackjack' || !['lobby', 'betting', 'complete'].includes(room.phase)) return null;
     const max = Math.floor(me.stack / 2) * 2;
     if (max < 2) return null;
     return { kind, action: 'bet', min: 2, max, step: 2, committed: 0, stack: me.stack,

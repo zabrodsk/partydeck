@@ -70,3 +70,184 @@ html.has-modal,html.has-modal body{overflow:hidden;overscroll-behavior:none}
 @media(max-width:600px){.betting-backdrop{align-items:flex-end;padding:12px 0 0}.betting-modal{max-width:100%;border-radius:24px 24px 0 0;border-bottom:0}.betting-header{padding:25px 24px 0}.betting-body{padding:0 24px}.betting-footer{padding:10px 24px max(10px,env(safe-area-inset-bottom))}.betting-amount{margin:22px 0 14px}}
 @media(max-width:370px){.betting-header{padding:22px 20px 0}.betting-header h2{font-size:24px}.betting-body{padding:0 20px}.betting-footer{padding-inline:20px}.bet-presets{gap:6px}.bet-breakdown>div{gap:10px}.next-bet button{padding:12px 16px}.player-screen .action-dock:has(.your-action){padding-inline:12px}}
 @media(max-height:560px){.betting-amount{margin:10px 0}.betting-modal #bet-amount{font-size:48px}.bet-presets{margin:12px 0}.betting-header{padding-top:20px}.bet-breakdown{padding-top:12px}.betting-footer{padding-top:8px;padding-bottom:8px}.bet-cancel{display:none}}
+
+/* A blackjack round occupies one viewport; betting is a separate step. */
+.blackjack-room.round-screen{height:100dvh;min-height:0;display:flex;flex-direction:column;gap:0;padding-bottom:env(safe-area-inset-bottom)}
+.blackjack-room.round-screen>.room-header{flex:none;padding-block:clamp(10px,2.2dvh,22px)}
+.blackjack-room .room-header>div:first-child{min-width:0;flex:1}
+.blackjack-room .room-header h1{max-width:min(35vw,320px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.blackjack-room .room-tools{flex-shrink:0}
+.blackjack-room.round-screen>.round-status{flex:none;padding:10px 0 4px;flex-wrap:wrap;line-height:1.3}
+.blackjack-room.round-screen>.activity-line{flex:none;min-height:0;padding:2px 0 4px}
+.blackjack-room.round-screen>.display-footer{flex:none;min-height:42px;padding:8px 0;margin:0;font-size:12px}
+.blackjack-room.round-screen>.table-stage{flex:1;min-height:0;height:auto;max-height:none;margin:8px auto;max-width:1700px;container-type:size}
+.blackjack-room .blackjack-table{display:grid;grid-template-rows:minmax(0,.8fr) minmax(0,1fr);gap:16px}
+.blackjack-room .blackjack-table .table-centre{position:static;transform:none;min-width:0;min-height:0;align-self:center;gap:8px}
+.blackjack-table .dealer-zone{display:flex;flex-direction:column;align-items:center;gap:10px}
+.blackjack-room .blackjack-table .board-cards{gap:8px;justify-content:center;flex-wrap:nowrap}
+.blackjack-room .blackjack-table .board-cards .card{width:min(110px,18cqh,calc(65cqw / 8));border-radius:8px;flex-shrink:0}
+.blackjack-seats{display:grid;grid-template-columns:repeat(var(--bj-columns),minmax(0,1fr));grid-auto-rows:minmax(0,1fr);gap:12px 24px;min-height:0;align-items:stretch}
+.blackjack-room .blackjack-table .seat{position:static;transform:none;min-width:0;max-width:none;width:100%;min-height:0;justify-content:center;--card-size:min(100px,16cqh)}
+.blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .seat{--card-size:min(70px,9cqh)}
+.blackjack-room .blackjack-table .seat-meta{padding:4px 8px;gap:8px;max-width:100%}
+.blackjack-room .blackjack-table .seat-meta strong{font-size:clamp(12px,1.4vw,20px);max-width:190px}
+.blackjack-room .blackjack-table .seat-meta>div>span{font-size:clamp(11px,1.2vw,16px)}
+.blackjack-room .blackjack-table .seat .avatar{width:30px;height:30px;font-size:13px;flex-shrink:0}
+.blackjack-room .blackjack-table .seat-cards{width:100%;max-width:460px;flex-wrap:nowrap;gap:10px;align-items:start;margin-top:6px}
+.blackjack-room .blackjack-table .public-bj-hand{flex:1;display:flex;flex-direction:column;align-items:center;min-width:0;max-width:none;gap:4px}
+.hand-fan{container-type:inline-size;display:flex;justify-content:center;width:100%;min-width:0;--fan-card:min(var(--card-size,120px),calc((100cqw - 12px)/(1 + .3*(var(--cards) - 1))))}
+.blackjack-room .hand-fan .card{width:var(--fan-card);flex:0 0 var(--fan-card);rotate:none;translate:none;border-radius:6px}
+.blackjack-room .hand-fan .card+.card{margin-left:calc(var(--fan-card)*-.7)}
+.blackjack-room .hand-fan{gap:0;flex-wrap:nowrap}
+.blackjack-room .public-total{font-size:clamp(12px,1.3vw,20px);font-weight:500}
+.blackjack-room .blackjack-table .seat-action{font-size:clamp(11px,1.1vw,16px);margin-top:3px;min-height:14px}
+.blackjack-room .seat-action.settled{color:var(--ink);font-weight:500}
+.blackjack-room.round-screen>.result-summary{flex:none;width:100%;max-width:none;border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:8px 0;margin:0;display:flex;align-items:center;justify-content:center;gap:16px}
+.blackjack-room.round-screen>.result-summary>strong{font-size:16px;letter-spacing:-.02em}
+.blackjack-room.round-screen>.result-summary>span{margin:0;line-height:1.35;font-size:12px}
+.blackjack-room.round-screen>.result-summary .result-detail{display:none}
+.round-tabs{display:flex;justify-content:center;gap:24px;border-bottom:1px solid var(--line);flex-shrink:0}
+.round-tabs button{background:none;padding:12px 4px;border-bottom:2px solid transparent;color:var(--muted);font-size:13px;min-height:44px}
+.round-tabs button[aria-pressed=true]{border-color:var(--ink);color:var(--ink)}
+.blackjack-room.round-screen .private-hand{flex:1;width:100%;min-height:0;max-height:none;max-width:620px;margin:0 auto;padding:10px 0 12px}
+.blackjack-room.round-screen .hand-status{margin:0 0 6px;flex-shrink:0}
+.blackjack-room.round-screen .private-spacer{padding:0;min-height:0;flex:none}
+.blackjack-room.round-screen .private-spacer .muted{font-size:11px}
+.blackjack-room.round-screen .hand-content{flex:1;min-height:0;margin:0;padding:10px 0;justify-content:center;--card-size:min(160px,24dvh)}
+.blackjack-room .blackjack-hands{flex-wrap:nowrap;gap:10px;margin:0;min-height:0}
+.blackjack-room .bj-hand{flex:1;min-width:0;padding:4px 0;gap:6px}
+.blackjack-room .bj-hand .own-cards{margin:0}
+.blackjack-room .hand-total{font-size:24px;line-height:1.1}
+.blackjack-room.round-screen .hand-content>.own-stack{font-size:20px;margin:10px 0 0!important}
+.blackjack-room.round-screen .private-hand>.result-summary{flex:none;width:100%;margin:0 0 8px;padding:10px 0;background:none;border:0;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:8px 16px}
+.blackjack-room .private-hand>.result-summary>strong{font-size:22px}
+.blackjack-room .private-hand>.result-summary .result-amount{font-size:24px;margin:0}
+.blackjack-room .private-hand>.result-summary .result-detail{display:none}
+.blackjack-room.round-screen .action-dock{flex:none;width:100%;max-width:none;margin:0;padding:10px 0 0;border-radius:0;background:none}
+.blackjack-room .action-dock .turn-label{font-size:13px;line-height:1.25;margin-bottom:8px}
+.blackjack-room .action-dock .turn-caption{margin-top:4px;font-size:11px}
+.blackjack-room .action-buttons{gap:8px}
+.blackjack-room .action-buttons button{min-height:48px;padding:10px 14px}
+.blackjack-room .lobby-start{margin:0;width:100%}
+.blackjack-room .host-next{margin:0;justify-content:center}
+.blackjack-room .host-next .large{min-height:50px;width:100%;max-width:440px;padding:12px 18px}
+.blackjack-room .start-hint{font-size:12px;margin:8px 0 0}
+.wager-lobby{flex:1;min-height:0;width:100%;max-width:600px;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 0;gap:12px}
+.wager-lobby h2{font-size:clamp(28px,4vw,46px);margin:0;text-align:center}
+.wager-progress{color:var(--muted);font-size:14px;margin:0}
+.wager-choice{display:flex;gap:24px;align-items:center;margin:5px 0}
+.wager-choice>strong{font-size:36px;font-weight:500;letter-spacing:-.05em}
+.wager-choice>strong>span{font-size:14px;font-weight:400;letter-spacing:0;color:var(--muted)}
+.wager-players{width:100%;max-height:50dvh;overflow-y:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin:8px 0}
+.wager-players>div{display:flex;align-items:center;gap:8px;min-width:0;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px}
+.wager-players .avatar{width:26px;height:26px;flex:none;font-size:11px}
+.wager-players strong{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-weight:500}
+.wager-players>div>span:last-child{margin-left:auto;flex-shrink:0;font-size:11px;color:var(--muted)}
+.wager-players>div>.bet-ready{color:#526448!important}
+.wager-lobby>p.muted{font-size:13px;text-align:center;margin:0}
+.blackjack-betting .bet-breakdown{padding-top:12px}
+.blackjack-betting .bet-added{display:none}
+.blackjack-betting .betting-amount{margin:24px 0 14px}
+.blackjack-betting .bet-presets button{border-radius:50%;width:64px;height:64px;justify-self:center;padding:0;border:3px double #b7beaf;background:transparent;font-size:14px}
+.blackjack-betting .bet-presets button[aria-pressed=true]{background:#263022;color:#fff;border-color:#8a987d}
+@media(max-width:750px){
+ .blackjack-room .blackjack-table{grid-template-rows:minmax(0,.6fr) minmax(0,1.7fr);gap:10px}
+ .blackjack-seats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px}
+ .blackjack-table[data-players="1"] .blackjack-seats{grid-template-columns:1fr}
+ .blackjack-room .blackjack-table .seat{--card-size:min(80px,16cqh)}
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"]) .seat{--card-size:min(50px,9cqh)}
+ .blackjack-room .blackjack-table:is([data-players="7"],[data-players="8"]) .seat{--card-size:min(40px,6cqh)}
+ .blackjack-room .blackjack-table .board-cards .card{width:min(75px,16cqh,10cqw)}
+ .blackjack-room .blackjack-table .seat-meta{padding:3px 4px;gap:5px}
+ .blackjack-room .blackjack-table .seat .avatar{display:none}
+ .blackjack-room .blackjack-table .seat-meta strong{max-width:110px;font-size:12px}
+ .blackjack-room .blackjack-table .seat-meta>div>span{font-size:11px}
+ .blackjack-room .blackjack-table .seat-cards{margin-top:3px;gap:6px}
+ .blackjack-room .blackjack-table .seat-action{font-size:10px;min-height:12px}
+ .blackjack-room .blackjack-table .public-total{font-size:12px}
+ .blackjack-room .blackjack-table .dealer-zone{gap:5px}
+ .blackjack-room.round-screen>.activity-line{display:none}
+ .blackjack-room.round-screen>.result-summary{flex-direction:column;gap:3px;padding:7px 0}
+ .blackjack-room.round-screen>.result-summary>strong{font-size:14px}
+ .blackjack-room.round-screen>.result-summary>span{font-size:11px}
+ .blackjack-room.round-screen>.display-footer{font-size:10px;min-height:38px}
+ .wager-lobby{gap:8px;padding:16px 0}
+ .wager-players{gap:0 14px;max-height:46dvh}
+ .wager-players>div{flex-wrap:wrap;gap:5px;padding:10px 0}
+ .wager-players>div>span:last-child{width:100%;padding-left:31px}
+ .blackjack-betting{padding:0;align-items:center;background:#f7f7f3}
+ .blackjack-betting .betting-modal{border:0;border-radius:0;box-shadow:none;width:100%;max-width:480px;max-height:100%}
+ .blackjack-betting .betting-header{padding-top:20px}
+ .blackjack-betting .betting-footer{padding-bottom:max(14px,env(safe-area-inset-bottom))}
+}
+@media(max-height:700px){
+ .blackjack-room.round-screen>.room-header{padding-block:10px}
+ .blackjack-room.round-screen .hand-content{--card-size:min(120px,21dvh);padding-block:5px}
+ .blackjack-room.round-screen .private-spacer{display:none}
+ .blackjack-room.round-screen .action-dock .turn-caption{display:none}
+ .blackjack-room .private-hand>.result-summary>strong{font-size:19px}
+ .blackjack-room .private-hand>.result-summary .result-amount{font-size:21px}
+ .blackjack-betting .betting-amount{margin:12px 0 8px}
+ .blackjack-betting .bet-presets{margin:12px 0}
+ .blackjack-betting .bet-presets button{width:56px;height:56px}
+ .blackjack-betting .bet-cancel{display:none}
+}
+@media(max-height:500px) and (min-width:600px){
+ .blackjack-room.round-screen .room-header .muted{display:none}
+ .blackjack-room.round-screen>.round-status{padding:5px 0}
+ .blackjack-room .blackjack-table{grid-template-rows:minmax(0,.5fr) minmax(0,1fr);gap:6px}
+ .blackjack-room .blackjack-table .seat{--card-size:min(44px,11cqh)}
+ .blackjack-room .blackjack-table .seat .avatar{display:none}
+ .blackjack-room .blackjack-table .seat-meta{padding:1px 4px}
+ .blackjack-room .blackjack-table .seat-meta>div{flex-direction:row;align-items:center;gap:8px}
+ .blackjack-room .blackjack-table .seat-cards{margin-top:2px}
+ .blackjack-room .blackjack-table .seat-action{font-size:10px}
+ .blackjack-room .blackjack-table .board-cards .card{width:min(44px,15cqh)}
+ .blackjack-room.round-screen .private-hand{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;gap:8px 24px;align-items:center;max-width:800px}
+ .blackjack-room .private-hand .hand-status{grid-column:1/-1;margin:0}
+ .blackjack-room .private-hand .hand-content{grid-column:1;grid-row:2/4;--card-size:90px}
+ .blackjack-room .private-hand>.result-summary{grid-column:2;margin:0}
+ .blackjack-room .private-hand .action-dock{grid-column:2}
+ .wager-lobby{padding:6px 0;gap:6px;max-width:740px}
+ .wager-lobby h2{font-size:26px}
+ .wager-players{grid-template-columns:repeat(4,minmax(0,1fr));margin:0;gap:0 12px}
+ .wager-players>div{padding:5px 0;flex-wrap:wrap}
+ .wager-players .avatar{display:none}
+ .wager-choice{margin:0}
+ .wager-choice>strong{font-size:26px}
+}
+@media(max-width:750px){
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .seat-meta>div{flex-direction:row;align-items:center;gap:6px}
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .seat-meta strong{max-width:85px;font-size:11px}
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .seat-meta>div>span{font-size:10px}
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .public-bj-hand{gap:1px}
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .seat-action{margin-top:1px}
+ .blackjack-room .blackjack-table:is([data-players="7"],[data-players="8"]){grid-template-rows:minmax(0,.4fr) minmax(0,1.6fr)}
+ .blackjack-room.round-screen>.display-footer>span:nth-child(2){max-width:48%;text-align:center;font-size:10px}
+}
+/* Keep totals beside long hands when the table has multiple rows. */
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .public-bj-hand{flex-direction:row;justify-content:center;gap:4px}
+ .blackjack-room .blackjack-table:is([data-players="5"],[data-players="6"],[data-players="7"],[data-players="8"]) .hand-fan{flex:1}
+ .blackjack-room .blackjack-table .seat-cards:has(.public-bj-hand:nth-child(2)) .public-bj-hand{flex-direction:column}
+ .blackjack-room .blackjack-table .seat-cards:has(.public-bj-hand:nth-child(2)) .hand-fan{flex:none}
+.blackjack-room .blackjack-hands:has(.bj-hand:nth-child(3)){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;--card-size:min(100px,7dvh)}
+.blackjack-room .blackjack-hands:has(.bj-hand:nth-child(3)) .bj-hand{gap:4px;padding:2px 0}
+.blackjack-room .blackjack-hands:has(.bj-hand:nth-child(3)) .hand-total{font-size:20px}
+@media(max-height:500px) and (min-width:600px){
+ .blackjack-room .blackjack-table{grid-template-columns:minmax(0,.8fr) minmax(0,3fr);grid-template-rows:minmax(0,1fr);gap:20px}
+ .blackjack-room .blackjack-table .seat{--card-size:min(44px,13cqh)}
+ .blackjack-room .blackjack-table .seat-meta strong{font-size:11px;max-width:90px}
+ .blackjack-room .blackjack-table .seat-meta>div>span{font-size:10px}
+ .blackjack-room .blackjack-table .public-total{font-size:12px}
+}
+.blackjack-room .blackjack-table .seat:has(.public-bj-hand:nth-child(3)){--card-size:clamp(10px,2.8cqh,32px)}
+.blackjack-room .blackjack-table .seat-cards:has(.public-bj-hand:nth-child(3)){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 8px;max-width:280px}
+.blackjack-room .blackjack-table .seat-cards:has(.public-bj-hand:nth-child(3)) .public-bj-hand{flex-direction:row;gap:3px}
+.blackjack-room .blackjack-table .seat-cards:has(.public-bj-hand:nth-child(3)) .hand-fan{flex:1}
+@media(max-width:750px){
+ .wager-players>div{flex-wrap:nowrap;min-height:38px;padding:8px 0;gap:6px}
+ .wager-players .avatar{display:none}
+ .wager-players strong{flex:1;font-size:12px}
+ .wager-players>div>span:last-child{width:auto;padding:0;font-size:10px}
+}
+.blackjack-room.round-complete .hand-status,.blackjack-room.round-complete .private-spacer{display:none}

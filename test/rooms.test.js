@@ -124,3 +124,27 @@ test('disconnecting after going all-in does not fold or remove pot eligibility',
   assert.equal(r.players.find(p=>p.id===id).seated,true);assert.ok(!r.players.find(p=>p.id===id).lastAction.includes('Fold'));
   finish();assert.equal(r.players.reduce((n,p)=>n+p.stack,0),4100);
 });
+
+test('blackjack next hand waits for explicit bets from every connected player',t=>{
+ const {r,m,people,cmd,finish}=setup(t,2,{game:'blackjack'});
+ assert.throws(()=>cmd(people[1].id,'prepare'),/host/);
+ cmd(r.hostId,'prepare');assert.equal(r.phase,'betting');assert.equal(r.handNumber,0);
+ assert.throws(()=>cmd(r.hostId,'start'),/confirm/);
+ cmd(people[0].id,'bet',{amount:50});assert.equal(m.view(r,people[0].id).me.betReady,true);
+ assert.equal(r.players[0].stack,2000);assert.throws(()=>cmd(r.hostId,'start'),/confirm/);
+ cmd(people[1].id,'bet',{amount:100});cmd(r.hostId,'start');
+ assert.equal(r.handNumber,1);assert.equal(r.bj.players[0].hands[0].bet,50);assert.equal(r.bj.players[1].hands[0].bet,100);
+ finish();cmd(r.hostId,'prepare');assert.ok(r.players.every(p=>!p.betReady));assert.equal(r.results.length,0);assert.equal(r.bj,null);
+ assert.equal(m.view(r,people[0].id).me.hands.length,0);
+ cmd(people[0].id,'bet',{amount:20});
+ m.disconnect(r,people[1].id,people[1].id);cmd(r.hostId,'start');assert.equal(r.bj.players.length,1);
+});
+
+test('joining or reconnecting during blackjack betting cannot deal an unconfirmed bet',t=>{
+ const {r,m,people,cmd,store}=setup(t,2,{game:'blackjack'});cmd(r.hostId,'prepare');
+ cmd(r.hostId,'bet',{amount:20});m.disconnect(r,people[1].id,people[1].id);m.connect(r,people[1].id,'returned');
+ assert.throws(()=>cmd(r.hostId,'start'),/confirm/);
+ cmd(people[1].id,'bet',{amount:50});
+ const late=store.create('Late player');m.join(r,late);m.connect(r,late.id,'late');assert.throws(()=>cmd(r.hostId,'start'),/confirm/);
+ cmd(late.id,'bet',{amount:100});cmd(r.hostId,'start');assert.equal(r.bj.players.length,3);
+});
