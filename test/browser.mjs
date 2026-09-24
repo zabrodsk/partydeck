@@ -43,7 +43,7 @@ try{
  for(let i=0;i<3;i++){const p=byId.get((await read(host)).room.activeId);await p.waitForFunction(()=>JSON.parse(window.render_game_to_text()).room.me.legal.actions.length);const a=(await read(p)).room.me.legal.actions.includes('call')?'call':'check';await clickCommand(p,`[data-action=${a}]`);await host.waitForFunction(v=>JSON.parse(window.render_game_to_text()).room.version>=v,(await read(p)).room.version);}
  await display.waitForFunction(()=>JSON.parse(window.render_game_to_text()).room.board.length===3);await snap(display,'poker-table');await snap(friend,'phone-controller');
  await finish();assert.equal((await read(host)).room.players.reduce((n,p)=>n+p.stack,0),6000);await snap(display,'showdown');
- await host.getByLabel('Table menu').click();await clickCommand(host,'[data-command=mode]');await host.waitForSelector('.table-stage');await snap(host,'phone-only');
+ await host.getByLabel('Table menu').click();await clickCommand(host,'[data-command=mode]');await host.locator('[data-do=table-view]').click();await host.waitForSelector('.table-stage');await snap(host,'phone-only');
  await host.getByLabel('Table menu').click();await clickCommand(host,'[data-command=game]');await host.waitForSelector('[data-command=prepare]');await dealBlackjack(host,allPhones);
  await snap(host,'blackjack-phone');await snap(display,'blackjack-table');await finish();
  await host.getByLabel('Table menu').click();await host.getByRole('button',{name:'My profile'}).click();await snap(host,'achievements');
